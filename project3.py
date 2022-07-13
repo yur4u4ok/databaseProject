@@ -10,7 +10,7 @@ c_id=""
 #MODULE TO CHECK MYSQL CONNECTIVITY
 def MYSQLconnectionCheck ():
     global myConnection
-    myConnection=mysql.connector.connect(host="localhost",user="root",passwd="Yur4u4ok!", auth_plugin='mysql_native_password' )
+    myConnection=mysql.connector.connect(host="localhost",user="root",passwd="123", auth_plugin='mysql_native_password' )
     if myConnection:
         print("\n CONGRATULATIONS ! YOUR MYSQL CONNECTION HAS BEEN ESTABLISHED !")
         cursor=myConnection.cursor()
@@ -25,7 +25,7 @@ def MYSQLconnectionCheck ():
 def MYSQLconnection ():
     global myConnection
     global c_id
-    myConnection=mysql.connector.connect(host="localhost",user="root",passwd="Yur4u4ok!", database="railway" , auth_plugin='mysql_native_password' )
+    myConnection=mysql.connector.connect(host="localhost",user="root",passwd="123", database="railway" , auth_plugin='mysql_native_password' )
     if myConnection:
         return myConnection
     else:
